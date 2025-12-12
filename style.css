@@ -234,6 +234,61 @@ a:hover {
     text-shadow: 0 0 5px var(--primary-color);
 }
 
+
+/* --- What I Do Section Grid --- */
+.what-i-do-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.what-i-do-grid .dark-card {
+    /* Inherits card style, just adding icon styling */
+    padding: 25px;
+    text-align: center;
+}
+
+.what-i-do-grid .dark-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-i-do-grid .dark-card i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.what-i-do-grid .dark-card p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* 3D Dark Card Styling (Core of the impressive design) */
+.dark-card {
+    background: var(--bg-alt-color);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    /* Multiple shadows for 3D depth effect */
+    box-shadow: 
+        0 8px 25px var(--shadow-dark), 
+        inset 0 1px 0 var(--shadow-light); 
+    transition: all 0.3s;
+}
+.dark-card:hover {
+    box-shadow: 
+        0 12px 35px var(--shadow-dark), 
+        inset 0 1px 0 var(--shadow-light); 
+    transform: translateY(-2px);
+}
+
+
 /* --- 3. About Section Layout --- */
 .about-grid {
     display: grid;
@@ -259,25 +314,6 @@ a:hover {
     box-shadow: 0 10px 30px var(--shadow-dark);
     transform: rotate(5deg);
     opacity: 0.6;
-}
-
-/* 3D Dark Card Styling (Core of the impressive design) */
-.dark-card {
-    background: var(--bg-alt-color);
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    /* Multiple shadows for 3D depth effect */
-    box-shadow: 
-        0 8px 25px var(--shadow-dark), 
-        inset 0 1px 0 var(--shadow-light); 
-    transition: all 0.3s;
-}
-.dark-card:hover {
-    box-shadow: 
-        0 12px 35px var(--shadow-dark), 
-        inset 0 1px 0 var(--shadow-light); 
-    transform: translateY(-2px);
 }
 
 
@@ -374,6 +410,28 @@ a:hover {
     flex-grow: 1; 
     margin-bottom: 25px;
 }
+
+/* --- Project Links Layout and New Live Demo Button Style --- */
+.project-links {
+    display: flex; /* Make buttons align in a row */
+    gap: 15px; /* Spacing between the buttons */
+    margin-top: auto; /* Push links to the bottom of the card */
+}
+
+/* New button style for the Live Demo link */
+.live-demo-btn {
+    background: var(--bg-color); /* Darker background */
+    color: var(--text-color); /* Lighter text color */
+    border: 1px solid var(--primary-color); /* Cyan border */
+    box-shadow: 0 2px 5px rgba(0, 188, 212, 0.3);
+}
+
+.live-demo-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: translateY(-1px);
+}
+
 
 /* --- 6. Contact Section (Updated Contact Info Layout) --- */
 .contact-pitch {
@@ -602,5 +660,10 @@ a:hover {
     }
     .container {
         padding: 0 15px;
+    }
+    /* Stack project buttons on small screens */
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }

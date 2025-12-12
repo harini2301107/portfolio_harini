@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Highlight active link on scroll (Updated to include #skills section)
+    // Highlight active link on scroll
     const sections = document.querySelectorAll('.section, .hero-dark');
     const navLinks = document.querySelectorAll('.nav-menu a');
 
@@ -67,9 +67,31 @@ document.addEventListener('DOMContentLoaded', function() {
             summary: 'A robust software application designed to automate the process of calculating student Activity Points (AP) based on complex university and regulatory rules.',
             details: [
                 'Problem Solved: Automated the manual, error-prone process of calculating student activity points, saving significant administrative time.',
-                'Functionality:Automates data intake, cross-references activity types with point scales, and generates accurate, instant results.',
+                'Functionality: Automates data intake, cross-references activity types with point scales, and generates accurate, instant results.',
                 'Implementation: Focused on data structure integrity, efficient algorithm application, and clean user input/output interfaces.',
-                'Technical Skills Applied: Data validation, conditional logic programming (C/C++ or Python), and UI principles (using HTML/CSS/JavaScript for presentation, if web-based).',
+                'Technical Skills Applied:Data validation, conditional logic programming (C/C++ or Python), and UI principles (using HTML/CSS/JavaScript for presentation, if web-based).',
+            ]
+        },
+        // --- Senthuron Cafe Webpage (FRONTEND FOCUS) ---
+        'senthuron-cafe': {
+            title: 'Senthuron Cafe Webpage',
+            summary: 'Designed a modern, visually appealing webpage for Senthuron Cafe to showcase branding, menu, and contact info. Built using HTML, CSS, and JavaScript.',
+            details: [
+                'Front-end Focus: Executed full UI design and implementation, concentrating on aesthetics and user flow.',
+                'Key Feature: Implemented responsive design principles (CSS Media Queries) ensuring a consistent experience across desktop and mobile devices.',
+                'Technology Used: Demonstrates strong proficiency in HTML structure, advanced CSS layout techniques (Flexbox/Grid), and basic JavaScript interactivity.',
+                'Outcome:A professional, ready-to-deploy static website demonstrating keen front-end design and UX skills.'
+            ]
+        },
+        // --- Environment Friendly Goods (FRONTEND FOCUS) ---
+        'eco-goods': {
+            title: 'Environment Friendly Goods Landing Page',
+            summary: 'Created a conversion-focused landing page for a small online retailer promoting eco-friendly products. Built using HTML, CSS, and JavaScript.',
+            details: [
+                'Front-end Focus: Designed for maximum visual impact and clear Call-to-Action (CTA) placement to drive user conversion.',
+                'key Feature: Optimized page performance and structure for fast loading times and accessibility.',
+                'Technology Used: Practical application of modern HTML, detailed CSS styling, and JavaScript for client-side interactions.',
+                'Outcome: A polished, sales-oriented web page demonstrating focused front-end development and conversion-focused design.'
             ]
         }
     };
